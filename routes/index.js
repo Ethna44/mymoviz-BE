@@ -14,7 +14,7 @@ router.get("/movies", (req, res) => {
     .then((reponse) => reponse.json())
     .then((data) => {
       console.log(data);
-      res.json({movie:data.results});
+      res.json({movies:data.results});
     });
 });
 
